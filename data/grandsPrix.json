@@ -1,0 +1,58 @@
+{
+  "events": [
+    {
+      "country": "Australia",
+      "city": "Melbourne",
+      "timezone": "australia/melbourne",
+      "sessions": {
+        "firstPractice": {
+          "startDate": "2020-03-13T01:00:00.000Z",
+          "endDate": "2020-03-13T02:30:00.000Z"
+        },
+        "secondPractice": {
+          "startDate": "2020-03-13T05:00:00.000Z",
+          "endDate": "2020-03-13T06:30:00.000Z"
+        },
+        "thirdPractice": {
+          "startDate": "2020-03-14T03:00:00.000Z",
+          "endDate": "2020-03-14T04:00:00.000Z"
+        },
+        "qualifying": {
+          "startDate": "2020-03-14T06:00:00.000Z",
+          "endDate": "2020-03-14T07:00:00.000Z"
+        },
+        "race": {
+          "startDate": "2020-03-15T05:10:00.000Z",
+          "endDate": "2020-03-15T07:10:00.000Z"
+        }
+      }
+    },
+    {
+      "country": "Bahrain",
+      "city": "Sakhir",
+      "timezone": "asia/bahrain",
+      "sessions": {
+        "firstPractice": {
+          "startDate": "2020-03-20T11:00:00.000Z",
+          "endDate": "2020-03-20T12:30:00.000Z"
+        },
+        "secondPractice": {
+          "startDate": "2020-03-20T15:00:00.000Z",
+          "endDate": "2020-03-20T16:30:00.000Z"
+        },
+        "thirdPractice": {
+          "startDate": "2020-03-21T12:00:00.000Z",
+          "endDate": "2020-03-21T13:00:00.000Z"
+        },
+        "qualifying": {
+          "startDate": "2020-03-21T15:00:00.000Z",
+          "endDate": "2020-03-21T16:00:00.000Z"
+        },
+        "race": {
+          "startDate": "2020-03-22T15:10:00.000Z",
+          "endDate": "2020-03-22T17:10:00.000Z"
+        }
+      }
+    }
+  ]
+}
