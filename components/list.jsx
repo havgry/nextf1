@@ -5,12 +5,13 @@ const List = ({
   items,
 }) => (
   <ol>
-    {items.map((event) => (
+    {items.map((event, index) => (
       <li key={event.country}>
         <Event
           country={event.country}
           city={event.city}
           sessions={event.sessions}
+          isExpanded={index === 0}
         />
       </li>
     ))}
