@@ -31,6 +31,15 @@ const Session = ({
         li {
           display: flex;
           justify-content: space-between;
+          padding: 4px 8px;
+        }
+
+        li:nth-child(odd) {
+          background: #f0f0f0;
+        }
+
+        li:last-child {
+          font-weight: bold;
         }
 
         .day {

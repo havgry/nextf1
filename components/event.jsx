@@ -25,12 +25,7 @@ const Event = ({
             href="#"
             onClick={toggleVisibility}
           >
-            <span>
-              <em>
-                {country}
-              </em>
-              , {city}
-            </span>
+            {country} - {city}
           </a>
           <time dateTime={getFullDate(raceStartDate)}>
             {getDate(raceStartDate)}
@@ -71,6 +66,10 @@ const Event = ({
         h1 {
           display: flex;
           justify-content: space-between;
+        }
+
+        a:hover {
+          text-decoration: none;
         }
       `}</style>
       <style>{`
