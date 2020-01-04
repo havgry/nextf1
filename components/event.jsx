@@ -63,6 +63,10 @@ const Event = ({
           justify-content: space-between;
         }
 
+        a {
+          color: inherit;
+        }
+
         a:hover {
           text-decoration: none;
         }
