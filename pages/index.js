@@ -9,6 +9,7 @@ const Home = () => (
       <title>NextF1.com</title>
       <link rel="icon" href="/favicon.ico" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta name="mobile-web-app-capable" content="yes" />
     </Head>
 
     <h1>Formula 1 Calendar 2020</h1>
