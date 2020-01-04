@@ -11,13 +11,13 @@ const Session = ({
 
   return (
     <li>
-      <span>
+      <span className="session__title">
         {name}
       </span>
-      <span>
-        <time className="day" dateTime={getFullDate(startDate)}>
-          {getDayName(startDate)}
-        </time>
+      <time className="session__day" dateTime={getFullDate(startDate)}>
+        {getDayName(startDate)}
+      </time>
+      <span className="session__time">
         <time dateTime={getFullDate(startDate)}>
           {startTimeFormatted}
         </time>
@@ -39,12 +39,19 @@ const Session = ({
         }
 
         li:last-child {
-          font-weight: bold;
+          font-weight: 600;
         }
 
-        .day {
+        .session__title {
+          width: 50%;
+        }
+
+        .session__day {
+          width: 50%;
+        }
+
+        .session__time {
           width: 5rem;
-          display: inline-block;
         }
         `}</style>
     </li>

@@ -71,6 +71,11 @@ const Event = ({
         a:hover {
           text-decoration: none;
         }
+
+        main {
+          font-size: 0.8rem;
+          text-transform: uppercase;
+        }
       `}</style>
       <style>{`
         .ReactCollapse--collapse {
