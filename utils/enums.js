@@ -1,7 +1,7 @@
 export const SESSIONS = Object.freeze({
-  FP1: 'First practice',
-  FP2: 'Second practice',
-  FP3: 'Third practice',
+  FP1: 'Practice 1',
+  FP2: 'Practice 2',
+  FP3: 'Practice 3',
   Q: 'Qualifying',
   R: 'Race',
 })
