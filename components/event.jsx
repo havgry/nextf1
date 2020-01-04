@@ -61,6 +61,7 @@ const Event = ({
         h1 {
           display: flex;
           justify-content: space-between;
+          margin: 0;
         }
 
         a {
@@ -74,16 +75,13 @@ const Event = ({
         main {
           font-size: 0.8rem;
           text-transform: uppercase;
+          padding-top: 0.5rem;
         }
 
         li {
           display: flex;
           justify-content: space-between;
-          padding: 4px 8px;
-        }
-
-        li:nth-child(odd) {
-          background: #f0f0f0;
+          padding: 0.5rem 0;
         }
 
         li:last-child {
@@ -92,6 +90,13 @@ const Event = ({
 
         .sessions {
           width: 60%;
+        }
+
+        section {
+          background-color: #fff;
+          box-shadow: 0px 2px 6px 2px #d4d4d4;
+          padding: 0.5rem 1rem;
+          margin-bottom: 1rem;
         }
       `}</style>
       <style>{`

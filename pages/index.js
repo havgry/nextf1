@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import Head from 'next/head'
 
 import GrandsPrix from '../components/grandsPrix'
+import Header from '../components/header'
 
 const Home = () => (
   <Fragment>
@@ -10,17 +11,26 @@ const Home = () => (
       <link rel="icon" href="/favicon.ico" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta name="mobile-web-app-capable" content="yes" />
+      <meta name="theme-color" content="#e10600" />
     </Head>
 
-    <h1>Formula 1 Calendar 2020</h1>
+    <Header />
 
-    <GrandsPrix />
+    <main>
+      <GrandsPrix />
+    </main>
 
     <style jsx>{`
       @import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600&display=swap');
 
       :global(body) {
         font-family: 'Titillium Web', sans-serif;
+        margin: 0;
+        background-color: #f0f0f0;
+      }
+
+      main {
+        padding: 1rem;
       }
     `}</style>
       <style>{`
