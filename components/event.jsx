@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import { Collapse } from 'react-collapse'
 import Session from './session'
-import { SESSIONS } from '../utils/enums'
-import { getDate, getFullDate } from '../utils/formatters'
+import { getDate, getFullDate, groupByDayName } from '../utils'
 
 const Event = ({
   country,
@@ -10,13 +9,13 @@ const Event = ({
   sessions,
   isExpanded,
 }) => {
-  const raceStartDate = sessions[SESSIONS.RACE].startDate
+  const raceStartDate = sessions[sessions.length - 1].startDate
   const [isVisible, setVisibility] = useState(isExpanded)
   const toggleVisibility = (event) => {
     event.preventDefault()
     setVisibility(!isVisible)
   }
-
+  const sessionsByDay = groupByDayName(sessions)
   return (
     <section>
       <header>
@@ -34,31 +33,27 @@ const Event = ({
       </header>
       <Collapse isOpened={isVisible}>
         <main>
-          <Session
-            name="Practice 1"
-            startDate={sessions[SESSIONS.FIRST_PRACTICE].startDate}
-            endDate={sessions[SESSIONS.FIRST_PRACTICE].endDate}
-          />
-          <Session
-            name="Practice 2"
-            startDate={sessions[SESSIONS.SECOND_PRACTICE].startDate}
-            endDate={sessions[SESSIONS.SECOND_PRACTICE].endDate}
-          />
-          <Session
-            name="Practice 3"
-            startDate={sessions[SESSIONS.THIRD_PRACTICE].startDate}
-            endDate={sessions[SESSIONS.THIRD_PRACTICE].endDate}
-          />
-          <Session
-            name="Qualifying"
-            startDate={sessions[SESSIONS.QUALIFYING].startDate}
-            endDate={sessions[SESSIONS.QUALIFYING].endDate}
-          />
-          <Session
-            name="Race"
-            startDate={raceStartDate}
-            endDate={sessions[SESSIONS.RACE].endDate}
-          />
+          <ol>
+            {Object.keys(sessionsByDay).map((day) => (
+              <li key={day}>
+                <span>
+                  {day}
+                </span>
+                <ol className="sessions">
+                  {sessionsByDay[day].map((session) => {
+                    return (
+                      <Session
+                        key={session.type}
+                        type={session.type}
+                        startDate={session.startDate}
+                        endDate={session.endDate}
+                      />
+                    )
+                  })}
+                </ol>
+              </li>
+            ))}
+          </ol>
         </main>
       </Collapse>
 
@@ -75,6 +70,24 @@ const Event = ({
         main {
           font-size: 0.8rem;
           text-transform: uppercase;
+        }
+
+        li {
+          display: flex;
+          justify-content: space-between;
+          padding: 4px 8px;
+        }
+
+        li:nth-child(odd) {
+          background: #f0f0f0;
+        }
+
+        li:last-child {
+          font-weight: 600;
+        }
+
+        .sessions {
+          width: 60%;
         }
       `}</style>
       <style>{`

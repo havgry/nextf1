@@ -25,3 +25,12 @@ export const getDate = (dateTime) => {
 export const getFullDate = (dateTime) => {
   return getSpacetimeInTimeZone(dateTime).format('nice')
 }
+
+export const groupByDayName = (sessions) => {
+  return sessions.reduce((groups, session) => {
+    const group = getDayName(session.startDate)
+    groups[group] = groups[group] || []
+    groups[group].push(session)
+    return groups
+  }, {})
+}

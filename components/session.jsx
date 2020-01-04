@@ -1,8 +1,9 @@
 import React from 'react'
-import { formatTime, getDayName, getFullDate } from '../utils/formatters'
+import { formatTime, getFullDate } from '../utils'
+import { SESSIONS } from '../utils/enums'
 
 const Session = ({
-  name,
+  type,
   startDate,
   endDate,
 }) => {
@@ -10,13 +11,10 @@ const Session = ({
   const endTimeFormatted = formatTime(endDate)
 
   return (
-    <li>
+    <li key={type}>
       <span className="session__title">
-        {name}
+        {SESSIONS[type]}
       </span>
-      <time className="session__day" dateTime={getFullDate(startDate)}>
-        {getDayName(startDate)}
-      </time>
       <span className="session__time">
         <time dateTime={getFullDate(startDate)}>
           {startTimeFormatted}
@@ -31,23 +29,10 @@ const Session = ({
         li {
           display: flex;
           justify-content: space-between;
-          padding: 4px 8px;
-        }
-
-        li:nth-child(odd) {
-          background: #f0f0f0;
-        }
-
-        li:last-child {
-          font-weight: 600;
         }
 
         .session__title {
-          width: 50%;
-        }
-
-        .session__day {
-          width: 50%;
+          width: 8rem;
         }
 
         .session__time {

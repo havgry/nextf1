@@ -22,6 +22,13 @@ const Home = () => (
         font-family: 'Titillium Web', sans-serif;
       }
     `}</style>
+      <style>{`
+        ol {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+    `}</style>
   </Fragment>
 )
 
