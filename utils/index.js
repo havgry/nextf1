@@ -10,11 +10,11 @@ const getSpacetimeInTimeZone = (dateTime) => {
 }
 
 export const formatTime = (dateTime) => {
-  return getSpacetimeInTimeZone(dateTime).format('time-24')
+  return getSpacetimeInTimeZone(dateTime).format('{hour-24-pad}:{minute-pad}')
 }
 
 export const getDayName = (dateTime) => {
-  const dayName = getSpacetimeInTimeZone(dateTime).format('{day-short}')
+  const dayName = getSpacetimeInTimeZone(dateTime).format('day-short')
   return capitalize(dayName)
 }
 
