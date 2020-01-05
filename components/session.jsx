@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { formatTime, getFullDate } from '../utils'
 import { SESSIONS } from '../utils/enums'
 
@@ -19,10 +19,14 @@ const Session = ({
         <time dateTime={getFullDate(startDate)}>
           {startTimeFormatted}
         </time>
-        &nbsp;-&nbsp;
-        <time dateTime={getFullDate(endDate)}>
-          {endTimeFormatted}
-        </time>
+        {type !== 'R' &&
+          <Fragment>
+            &nbsp;-&nbsp;
+            <time dateTime={getFullDate(endDate)}>
+              {endTimeFormatted}
+            </time>
+          </Fragment>
+        }
       </span>
 
       <style jsx>{`
@@ -36,7 +40,7 @@ const Session = ({
         }
 
         .session__time {
-          width: 5rem;
+          width: 6rem;
         }
         `}</style>
     </li>
