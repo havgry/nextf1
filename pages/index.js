@@ -30,6 +30,8 @@ const Home = () => (
 
       main {
         padding: 1rem;
+        max-width: 40rem;
+        margin: 0 auto;
       }
     `}</style>
       <style>{`
