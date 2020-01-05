@@ -65,6 +65,38 @@
       ]
     },
     {
+      "country": "Vietnam",
+      "city": "Hanoi",
+      "timezone": "asia/ho_chi_minh",
+      "sessions": [
+        {
+          "type": "FP1",
+          "startDate": "2020-04-03T04:00:00.000Z",
+          "endDate": "2020-04-03T05:30:00.000Z"
+        },
+        {
+          "type": "FP2",
+          "startDate": "2020-04-03T08:00:00.000Z",
+          "endDate": "2020-04-03T09:30:00.000Z"
+        },
+        {
+          "type": "FP3",
+          "startDate": "2020-04-04T05:00:00.000Z",
+          "endDate": "2020-04-04T06:00:00.000Z"
+        },
+        {
+          "type": "Q",
+          "startDate": "2020-04-04T08:00:00.000Z",
+          "endDate": "2020-04-04T09:00:00.000Z"
+        },
+        {
+          "type": "R",
+          "startDate": "2020-04-05T08:10:00.000Z",
+          "endDate": "2020-04-05T10:10:00.000Z"
+        }
+      ]
+    },
+    {
       "country": "China",
       "city": "Shanghai",
       "timezone": "asia/shanghai",
@@ -93,6 +125,38 @@
           "type": "R",
           "startDate": "2020-04-19T07:10:00.000Z",
           "endDate": "2020-04-19T09:10:00.000Z"
+        }
+      ]
+    },
+    {
+      "country": "Netherlands",
+      "city": "Zandvoort",
+      "timezone": "europe/amsterdam",
+      "sessions": [
+        {
+          "type": "FP1",
+          "startDate": "2020-05-01T10:00:00.000Z",
+          "endDate": "2020-05-01T11:30:00.000Z"
+        },
+        {
+          "type": "FP2",
+          "startDate": "2020-05-01T14:00:00.000Z",
+          "endDate": "2020-05-01T15:30:00.000Z"
+        },
+        {
+          "type": "FP3",
+          "startDate": "2020-05-02T11:00:00.000Z",
+          "endDate": "2020-05-02T12:00:00.000Z"
+        },
+        {
+          "type": "Q",
+          "startDate": "2020-05-02T14:00:00.000Z",
+          "endDate": "2020-05-02T15:00:00.000Z"
+        },
+        {
+          "type": "R",
+          "startDate": "2020-05-03T14:10:00.000Z",
+          "endDate": "2020-05-03T16:10:00.000Z"
         }
       ]
     },
