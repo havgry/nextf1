@@ -4,6 +4,7 @@
       "country": "Australia",
       "city": "Melbourne",
       "timezone": "australia/melbourne",
+      "status": "UNCONFIRMED",
       "sessions": [
         {
           "type": "FP1",
@@ -36,6 +37,7 @@
       "country": "Bahrain",
       "city": "Sakhir",
       "timezone": "asia/bahrain",
+      "status": "UNCONFIRMED",
       "sessions": [
         {
           "type": "FP1",
@@ -68,6 +70,7 @@
       "country": "Vietnam",
       "city": "Hanoi",
       "timezone": "asia/ho_chi_minh",
+      "status": "TBA",
       "sessions": [
         {
           "type": "FP1",
@@ -100,6 +103,7 @@
       "country": "China",
       "city": "Shanghai",
       "timezone": "asia/shanghai",
+      "status": "UNCONFIRMED",
       "sessions": [
         {
           "type": "FP1",
@@ -132,6 +136,7 @@
       "country": "Netherlands",
       "city": "Zandvoort",
       "timezone": "europe/amsterdam",
+      "status": "TBA",
       "sessions": [
         {
           "type": "FP1",
@@ -164,6 +169,7 @@
       "country": "Spain",
       "city": "Catalunya",
       "timezone": "europe/madrid",
+      "status": "UNCONFIRMED",
       "sessions": [
         {
           "type": "FP1",
@@ -196,6 +202,7 @@
       "country": "Monaco",
       "city": "Monte Carlo",
       "timezone": "europe/monaco",
+      "status": "UNCONFIRMED",
       "sessions": [
         {
           "type": "FP1",
@@ -228,6 +235,7 @@
       "country": "Azerbaijan",
       "city": "Baku",
       "timezone": "asia/baku",
+      "status": "UNCONFIRMED",
       "sessions": [
         {
           "type": "FP1",
@@ -260,6 +268,7 @@
       "country": "Canada",
       "city": "Montréal",
       "timezone": "america/montreal",
+      "status": "UNCONFIRMED",
       "sessions": [
         {
           "type": "FP1",
@@ -292,6 +301,7 @@
       "country": "France",
       "city": "Le Castellet",
       "timezone": "europe/paris",
+      "status": "UNCONFIRMED",
       "sessions": [
         {
           "type": "FP1",
@@ -324,6 +334,7 @@
       "country": "Austria",
       "city": "Spielberg",
       "timezone": "europe/vienna",
+      "status": "UNCONFIRMED",
       "sessions": [
         {
           "type": "FP1",
@@ -356,6 +367,7 @@
       "country": "Great Britain",
       "city": "Silverstone",
       "timezone": "europe/london",
+      "status": "UNCONFIRMED",
       "sessions": [
         {
           "type": "FP1",
@@ -388,6 +400,7 @@
       "country": "Hungary",
       "city": "Budapest",
       "timezone": "europe/budapest",
+      "status": "UNCONFIRMED",
       "sessions": [
         {
           "type": "FP1",
@@ -420,6 +433,7 @@
       "country": "Belgium",
       "city": "Spa-Francorchamps",
       "timezone": "europe/brussels",
+      "status": "UNCONFIRMED",
       "sessions": [
         {
           "type": "FP1",
@@ -452,6 +466,7 @@
       "country": "Italy",
       "city": "Monza",
       "timezone": "europe/rome",
+      "status": "UNCONFIRMED",
       "sessions": [
         {
           "type": "FP1",
@@ -484,6 +499,7 @@
       "country": "Singapore",
       "city": "Singapore",
       "timezone": "asia/singapore",
+      "status": "UNCONFIRMED",
       "sessions": [
         {
           "type": "FP1",
@@ -516,6 +532,7 @@
       "country": "Russia",
       "city": "Sochi",
       "timezone": "europe/moscow",
+      "status": "UNCONFIRMED",
       "sessions": [
         {
           "type": "FP1",
@@ -548,6 +565,7 @@
       "country": "Japan",
       "city": "Suzuka",
       "timezone": "asia/tokyo",
+      "status": "UNCONFIRMED",
       "sessions": [
         {
           "type": "FP1",
@@ -580,6 +598,7 @@
       "country": "United States",
       "city": "Austin",
       "timezone": "america/chicago",
+      "status": "UNCONFIRMED",
       "sessions": [
         {
           "type": "FP1",
@@ -612,6 +631,7 @@
       "country": "Mexico",
       "city": "Mexico City",
       "timezone": "america/mexico_city",
+      "status": "UNCONFIRMED",
       "sessions": [
         {
           "type": "FP1",
@@ -644,6 +664,7 @@
       "country": "Brazil",
       "city": "São Paulo",
       "timezone": "america/sao_paulo",
+      "status": "UNCONFIRMED",
       "sessions": [
         {
           "type": "FP1",
@@ -676,6 +697,7 @@
       "country": "Abu Dhabi",
       "city": "Yas Island",
       "timezone": "asia/dubai",
+      "status": "UNCONFIRMED",
       "sessions": [
         {
           "type": "FP1",

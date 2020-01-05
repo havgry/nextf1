@@ -12,6 +12,7 @@ const List = ({
           city={event.city}
           sessions={event.sessions}
           isExpanded={index === 0}
+          status={event.status}
         />
       </li>
     ))}

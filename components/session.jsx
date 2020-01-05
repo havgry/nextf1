@@ -1,11 +1,12 @@
 import React, { Fragment } from 'react'
 import { formatTime, getFullDate } from '../utils'
-import { SESSIONS } from '../utils/enums'
+import { SESSIONS, STATUS } from '../utils/enums'
 
 const Session = ({
   type,
   startDate,
   endDate,
+  status,
 }) => {
   const startTimeFormatted = formatTime(startDate)
   const endTimeFormatted = formatTime(endDate)
@@ -16,16 +17,23 @@ const Session = ({
         {SESSIONS[type]}
       </span>
       <span className="session__time">
-        <time dateTime={getFullDate(startDate)}>
-          {startTimeFormatted}
-        </time>
-        {type !== 'R' &&
-          <Fragment>
-            &nbsp;-&nbsp;
-            <time dateTime={getFullDate(endDate)}>
-              {endTimeFormatted}
-            </time>
-          </Fragment>
+        {status === STATUS.TBA
+          ? <span title="To be announced">
+              TBA
+            </span>
+          : <Fragment>
+              <time dateTime={getFullDate(startDate)}>
+                {startTimeFormatted}
+              </time>
+              {type !== 'R' &&
+                <Fragment>
+                  &nbsp;-&nbsp;
+                  <time dateTime={getFullDate(endDate)}>
+                    {endTimeFormatted}
+                  </time>
+                </Fragment>
+              }
+            </Fragment>
         }
       </span>
 

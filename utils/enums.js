@@ -5,3 +5,9 @@ export const SESSIONS = Object.freeze({
   Q: 'Qualifying',
   R: 'Race',
 })
+
+export const STATUS = Object.freeze({
+  CONFIMRED: 'CONFIRMED',
+  UNCONFIRMED: 'UNCONFIRMED',
+  TBA: 'TBA',
+})
