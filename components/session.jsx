@@ -40,7 +40,8 @@ const Session = ({
         }
 
         .session__time {
-          width: 6rem;
+          width: 5rem;
+          flex-shrink: 0;
         }
         `}</style>
     </li>

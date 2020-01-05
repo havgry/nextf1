@@ -14,7 +14,7 @@ export const formatTime = (dateTime) => {
 }
 
 export const getDayName = (dateTime) => {
-  const dayName = getSpacetimeInTimeZone(dateTime).dayName()
+  const dayName = getSpacetimeInTimeZone(dateTime).format('{day-short}')
   return capitalize(dayName)
 }
 

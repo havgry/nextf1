@@ -19,63 +19,79 @@ const Event = ({
   return (
     <section>
       <header>
-        <h1>
-          <a
-            href="#"
-            onClick={toggleVisibility}
-          >
-            {country} - {city}
-          </a>
+        <a
+          href="#"
+          onClick={toggleVisibility}
+        >
+          <div>
+            <h1>
+              {country}
+            </h1>
+            <span className="area">
+              {city}
+            </span>
+          </div>
           <time dateTime={getFullDate(raceStartDate)}>
             {getDate(raceStartDate)}
           </time>
-        </h1>
+        </a>
       </header>
       <Collapse isOpened={isVisible}>
         <main>
           <ol>
-            {Object.keys(sessionsByDay).map((day) => (
-              <li key={day}>
-                <span>
-                  {day}
-                </span>
-                <ol className="sessions">
-                  {sessionsByDay[day].map((session) => {
-                    return (
-                      <Session
-                        key={session.type}
-                        type={session.type}
-                        startDate={session.startDate}
-                        endDate={session.endDate}
-                      />
-                    )
-                  })}
-                </ol>
-              </li>
-            ))}
+            {Object.keys(sessionsByDay).map((day) => {
+              const dailySessions = sessionsByDay[day]
+              return (
+                <li key={day}>
+                  <span>
+                    {day}, {getDate(dailySessions[0].startDate)}
+                  </span>
+                  <ol className="sessions">
+                    {dailySessions.map((session) => {
+                      return (
+                        <Session
+                          key={session.type}
+                          type={session.type}
+                          startDate={session.startDate}
+                          endDate={session.endDate}
+                        />
+                      )
+                    })}
+                  </ol>
+                </li>
+              )}
+            )}
           </ol>
         </main>
       </Collapse>
 
       <style jsx>{`
         h1 {
-          display: flex;
-          justify-content: space-between;
           margin: 0;
+          font-size: 1.3rem;
+        }
+
+        time {
+          width: 5rem;
+          text-transform: uppercase;
+        }
+
+        .area {
+          text-transform: uppercase;
         }
 
         a {
+          padding: 0.5rem 0;
           color: inherit;
-        }
-
-        a:hover {
           text-decoration: none;
+          display: flex;
+          justify-content: space-between;
         }
 
         main {
           font-size: 0.8rem;
           text-transform: uppercase;
-          padding-top: 0.5rem;
+          padding: 0.5rem 0;
         }
 
         li {
@@ -93,10 +109,11 @@ const Event = ({
         }
 
         section {
-          background-color: #fff;
-          box-shadow: 0px 2px 6px 2px #d4d4d4;
-          padding: 0.5rem 1rem;
-          margin-bottom: 1rem;
+          border-bottom: 1px solid #cecece;
+        }
+
+        section:hover {
+          border-color: #000;
         }
       `}</style>
       <style>{`

@@ -26,7 +26,6 @@ const Home = () => (
       :global(body) {
         font-family: 'Titillium Web', sans-serif;
         margin: 0;
-        background-color: #f0f0f0;
       }
 
       main {
