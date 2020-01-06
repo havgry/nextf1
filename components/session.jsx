@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { formatTime, getFullDate } from '../utils'
+import { formatTime, getFullDate, timeFromNow } from '../utils'
 import { SESSIONS, STATUS } from '../utils/enums'
 
 const Session = ({
@@ -12,7 +12,7 @@ const Session = ({
   const endTimeFormatted = formatTime(endDate)
 
   return (
-    <li key={type}>
+    <li key={type} title={`Starts ${timeFromNow(startDate)}`}>
       <span className="session__title">
         {SESSIONS[type]}
       </span>

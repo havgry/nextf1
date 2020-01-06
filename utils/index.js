@@ -34,3 +34,9 @@ export const groupByDayName = (sessions) => {
     return groups
   }, {})
 }
+
+export const timeFromNow = (dateTime) => {
+  const now = getSpacetimeInTimeZone(new Date())
+  const future = getSpacetimeInTimeZone(dateTime)
+  return now.since(future).precise
+}
