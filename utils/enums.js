@@ -4,6 +4,7 @@ export const SESSIONS = Object.freeze({
   FP3: 'Practice 3',
   Q: 'Qualifying',
   R: 'Race',
+  T: 'Test day',
 })
 
 export const STATUS = Object.freeze({

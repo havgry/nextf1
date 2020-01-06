@@ -1,6 +1,52 @@
 {
   "events": [
     {
+      "country": "Pre-season test 1",
+      "city": "Catalunya",
+      "timezone": "europe/madrid",
+      "status": "UNCONFIRMED",
+      "sessions": [
+        {
+          "type": "T",
+          "startDate": "2020-02-19T08:00:00.000Z",
+          "endDate": "2020-02-19T17:00:00.000Z"
+        },
+        {
+          "type": "T",
+          "startDate": "2020-02-20T08:00:00.000Z",
+          "endDate": "2020-02-20T17:00:00.000Z"
+        },
+        {
+          "type": "T",
+          "startDate": "2020-02-21T08:00:00.000Z",
+          "endDate": "2020-02-21T17:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "country": "Pre-season test 2",
+      "city": "Catalunya",
+      "timezone": "europe/madrid",
+      "status": "UNCONFIRMED",
+      "sessions": [
+        {
+          "type": "T",
+          "startDate": "2020-02-26T08:00:00.000Z",
+          "endDate": "2020-02-26T17:00:00.000Z"
+        },
+        {
+          "type": "T",
+          "startDate": "2020-02-27T08:00:00.000Z",
+          "endDate": "2020-02-27T17:00:00.000Z"
+        },
+        {
+          "type": "T",
+          "startDate": "2020-02-28T08:00:00.000Z",
+          "endDate": "2020-02-28T17:00:00.000Z"
+        }
+      ]
+    },
+    {
       "country": "Australia",
       "city": "Melbourne",
       "timezone": "australia/melbourne",
