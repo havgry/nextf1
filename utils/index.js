@@ -40,3 +40,13 @@ export const timeFromNow = (dateTime) => {
   const future = getSpacetimeInTimeZone(dateTime)
   return now.since(future).precise
 }
+
+export const getStartEndDates = (dateTimeStart, dateTimeEnd) => {
+  const start = getSpacetimeInTimeZone(dateTimeStart)
+  const end = getSpacetimeInTimeZone(dateTimeEnd)
+  const isSameMonth = start.isSame(end, 'month')
+  const startDateFormatted = isSameMonth ? start.format('date') : start.format('{date} {month-short}')
+  const endDateFormatted = end.format('{date} {month-short}')
+
+  return [startDateFormatted, endDateFormatted]
+}

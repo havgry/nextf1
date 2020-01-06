@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Collapse } from 'react-collapse'
 import Session from './session'
-import { getDate, getFullDate, groupByDayName } from '../utils'
+import { getDate, getFullDate, groupByDayName, getStartEndDates } from '../utils'
 import { STATUS } from '../utils/enums'
 
 const Event = ({
@@ -11,13 +11,15 @@ const Event = ({
   isExpanded,
   status,
 }) => {
-  const raceStartDate = sessions[sessions.length - 1].startDate
+  const firstSessionStart = sessions[0].startDate
+  const lastSessionStart = sessions[sessions.length - 1].startDate
   const [isVisible, setVisibility] = useState(isExpanded)
   const toggleVisibility = (event) => {
     event.preventDefault()
     setVisibility(!isVisible)
   }
   const sessionsByDay = groupByDayName(sessions)
+  const startEndDates = getStartEndDates(firstSessionStart, lastSessionStart)
   return (
     <section>
       <header>
@@ -33,9 +35,15 @@ const Event = ({
               {city}
             </span>
           </div>
-          <time dateTime={getFullDate(raceStartDate)}>
-            {getDate(raceStartDate)}
-          </time>
+          <div>
+            <time dateTime={getFullDate(firstSessionStart)}>
+              {startEndDates[0]}
+            </time>
+            &nbsp;-&nbsp;
+            <time dateTime={getFullDate(lastSessionStart)}>
+              {startEndDates[1]}
+            </time>
+          </div>
         </a>
       </header>
       <Collapse isOpened={isVisible}>
