@@ -89,6 +89,7 @@ const Event = ({
         time {
           width: 5rem;
           text-transform: uppercase;
+          line-height: 2.3rem;
         }
 
         .area {
@@ -101,6 +102,10 @@ const Event = ({
           text-decoration: none;
           display: flex;
           justify-content: space-between;
+        }
+
+        a:hover {
+          color: #1e41ff;
         }
 
         .main {
@@ -133,11 +138,7 @@ const Event = ({
         }
 
         section {
-          border-bottom: 1px solid #cecece;
-        }
-
-        section:hover {
-          border-color: #000;
+          border-bottom: 1px solid #a5a5a5;
         }
 
         footer {
