@@ -39,7 +39,7 @@ const Event = ({
         </a>
       </header>
       <Collapse isOpened={isVisible}>
-        <main>
+        <main className={`main main--${isVisible ? 'visible' : 'hidden'}`}>
           <ol>
             {Object.keys(sessionsByDay).map((day) => {
               const dailySessions = sessionsByDay[day]
@@ -101,10 +101,19 @@ const Event = ({
           justify-content: space-between;
         }
 
-        main {
+        .main {
           font-size: 0.8rem;
           text-transform: uppercase;
           padding: 0.5rem 0;
+          transition: opacity .35s ease;
+        }
+
+        .main--hidden {
+          opacity: 0;
+        }
+
+        .main--visible {
+          opacity: 1;
         }
 
         li {
@@ -152,7 +161,7 @@ const Event = ({
       `}</style>
       <style>{`
         .ReactCollapse--collapse {
-          transition: height .25s ease;
+          transition: height .35s ease;
         }
       `}
       </style>
