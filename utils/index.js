@@ -53,7 +53,7 @@ export const getStartEndDates = (dateTimeStart, dateTimeEnd, initialTimezone) =>
 }
  
 export const initGA = () => {
-  ReactGA.initialize(process.env.ga_tracking_id)
+  ReactGA.initialize(process.env.GA_TRACKING_ID)
 }
  
 export const trackPageView = () => {
