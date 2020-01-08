@@ -1,5 +1,5 @@
 {
   "env": {
-    "ga_tracking_id": "@environment-variable-name"
+    "ga_tracking_id": "@ga_tracking_id"
   }
 }
