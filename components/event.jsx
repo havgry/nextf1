@@ -7,6 +7,7 @@ import { STATUS } from '../utils/enums'
 const Event = ({
   country,
   city,
+  timezone,
   sessions,
   isExpanded,
   status,
@@ -18,8 +19,8 @@ const Event = ({
     event.preventDefault()
     setVisibility(!isVisible)
   }
-  const sessionsByDay = groupByDayName(sessions)
-  const startEndDates = getStartEndDates(firstSessionStart, lastSessionStart)
+  const sessionsByDay = groupByDayName(sessions, timezone)
+  const startEndDates = getStartEndDates(firstSessionStart, lastSessionStart, timezone)
   return (
     <section>
       <header>
@@ -36,11 +37,11 @@ const Event = ({
             </span>
           </div>
           <div>
-            <time dateTime={getFullDate(firstSessionStart)}>
+            <time dateTime={getFullDate(firstSessionStart, timezone)}>
               {startEndDates[0]}
             </time>
             &nbsp;-&nbsp;
-            <time dateTime={getFullDate(lastSessionStart)}>
+            <time dateTime={getFullDate(lastSessionStart, timezone)}>
               {startEndDates[1]}
             </time>
           </div>
@@ -54,7 +55,7 @@ const Event = ({
               return (
                 <li key={day}>
                   <span>
-                    {day}, {getDate(dailySessions[0].startDate)}
+                    {day}, {getDate(dailySessions[0].startDate, timezone)}
                   </span>
                   <ol className="sessions">
                     {dailySessions.map((session) => {
@@ -65,6 +66,7 @@ const Event = ({
                           startDate={session.startDate}
                           endDate={session.endDate}
                           status={status}
+                          timezone={timezone}
                         />
                       )
                     })}

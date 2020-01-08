@@ -7,12 +7,13 @@ const Session = ({
   startDate,
   endDate,
   status,
+  timezone,
 }) => {
-  const startTimeFormatted = formatTime(startDate)
-  const endTimeFormatted = formatTime(endDate)
+  const startTimeFormatted = formatTime(startDate, timezone)
+  const endTimeFormatted = formatTime(endDate, timezone)
 
   return (
-    <li key={type} title={`Starts ${timeFromNow(startDate)}`}>
+    <li key={type} title={`Starts ${timeFromNow(startDate, timezone)}`}>
       <span className="session__title">
         {SESSIONS[type]}
       </span>
@@ -22,13 +23,13 @@ const Session = ({
               TBA
             </span>
           : <Fragment>
-              <time dateTime={getFullDate(startDate)}>
+              <time dateTime={getFullDate(startDate, timezone)}>
                 {startTimeFormatted}
               </time>
               {type !== 'R' &&
                 <Fragment>
                   &nbsp;-&nbsp;
-                  <time dateTime={getFullDate(endDate)}>
+                  <time dateTime={getFullDate(endDate, timezone)}>
                     {endTimeFormatted}
                   </time>
                 </Fragment>

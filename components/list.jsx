@@ -13,6 +13,7 @@ const List = ({
           sessions={event.sessions}
           isExpanded={index === 0}
           status={event.status}
+          timezone={event.timezone}
         />
       </li>
     ))}

@@ -4,46 +4,46 @@ const capitalize = (string) => {
   return string.charAt(0).toUpperCase() + string.slice(1)
 }
 
-const getSpacetimeInTimeZone = (dateTime) => {
+const getSpacetimeInTimeZone = (dateTime, initialTimezone) => {
   const currentTimeZone = spacetime().timezone().name
-  return spacetime(dateTime).goto(currentTimeZone)
+  return spacetime(dateTime, initialTimezone).goto(currentTimeZone)
 }
 
-export const formatTime = (dateTime) => {
-  return getSpacetimeInTimeZone(dateTime).format('{hour-24-pad}:{minute-pad}')
+export const formatTime = (dateTime, initialTimezone) => {
+  return getSpacetimeInTimeZone(dateTime, initialTimezone).format('{hour-24-pad}:{minute-pad}')
 }
 
-export const getDayName = (dateTime) => {
-  const dayName = getSpacetimeInTimeZone(dateTime).format('day-short')
+export const getDayName = (dateTime, initialTimezone) => {
+  const dayName = getSpacetimeInTimeZone(dateTime, initialTimezone).format('day-short')
   return capitalize(dayName)
 }
 
-export const getDate = (dateTime) => {
-  return getSpacetimeInTimeZone(dateTime).format('{date} {month-short}')
+export const getDate = (dateTime, initialTimezone) => {
+  return getSpacetimeInTimeZone(dateTime, initialTimezone).format('{date} {month-short}')
 }
 
-export const getFullDate = (dateTime) => {
-  return getSpacetimeInTimeZone(dateTime).format('nice')
+export const getFullDate = (dateTime, initialTimezone) => {
+  return getSpacetimeInTimeZone(dateTime, initialTimezone).format('nice')
 }
 
-export const groupByDayName = (sessions) => {
+export const groupByDayName = (sessions, timezone) => {
   return sessions.reduce((groups, session) => {
-    const group = getDayName(session.startDate)
+    const group = getDayName(session.startDate, timezone)
     groups[group] = groups[group] || []
     groups[group].push(session)
     return groups
   }, {})
 }
 
-export const timeFromNow = (dateTime) => {
-  const now = getSpacetimeInTimeZone(new Date())
-  const future = getSpacetimeInTimeZone(dateTime)
+export const timeFromNow = (dateTime, initialTimezone) => {
+  const now = spacetime(new Date())
+  const future = getSpacetimeInTimeZone(dateTime, initialTimezone)
   return now.since(future).precise
 }
 
-export const getStartEndDates = (dateTimeStart, dateTimeEnd) => {
-  const start = getSpacetimeInTimeZone(dateTimeStart)
-  const end = getSpacetimeInTimeZone(dateTimeEnd)
+export const getStartEndDates = (dateTimeStart, dateTimeEnd, initialTimezone) => {
+  const start = getSpacetimeInTimeZone(dateTimeStart, initialTimezone)
+  const end = getSpacetimeInTimeZone(dateTimeEnd, initialTimezone)
   const isSameMonth = start.isSame(end, 'month')
   const startDateFormatted = isSameMonth ? start.format('date') : start.format('{date} {month-short}')
   const endDateFormatted = end.format('{date} {month-short}')
