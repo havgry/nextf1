@@ -1,0 +1,5 @@
+{
+  "env": {
+    "ga_tracking_id": "@environment-variable-name"
+  }
+}

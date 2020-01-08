@@ -1,4 +1,5 @@
 import spacetime from 'spacetime'
+import ReactGA from 'react-ga'
 
 const capitalize = (string) => {
   return string.charAt(0).toUpperCase() + string.slice(1)
@@ -49,4 +50,13 @@ export const getStartEndDates = (dateTimeStart, dateTimeEnd, initialTimezone) =>
   const endDateFormatted = end.format('{date} {month-short}')
 
   return [startDateFormatted, endDateFormatted]
+}
+ 
+export const initGA = () => {
+  ReactGA.initialize(process.env.GA_TRACKING_ID)
+}
+ 
+export const trackPageView = () => {
+  ReactGA.set({ page: window.location.pathname })
+  ReactGA.pageview(window.location.pathname)
 }

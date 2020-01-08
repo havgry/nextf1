@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import Head from 'next/head'
 
+import TrackingWrapper from '../components/trackingWrapper'
 import GrandsPrix from '../components/grandsPrix'
 import Header from '../components/header'
 
@@ -14,11 +15,12 @@ const Home = () => (
       <meta name="theme-color" content="#e10600" />
     </Head>
 
-    <Header />
-
-    <main>
-      <GrandsPrix />
-    </main>
+    <TrackingWrapper>
+      <Header />
+      <main>
+        <GrandsPrix />
+      </main>
+    </TrackingWrapper>
 
     <style jsx>{`
       @import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600&display=swap');
