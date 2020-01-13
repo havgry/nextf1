@@ -2,7 +2,6 @@ import { useEffect } from 'react'
 import { initGA, trackPageView } from '../utils'
 
 const trackPageViews = () => {
-  console.log(process.env.GA_TRACKING_ID)
   if (!window.GA_INITIALIZED) {
     initGA()
     window.GA_INITIALIZED = true
@@ -12,7 +11,9 @@ const trackPageViews = () => {
 
 const Layout = ({ children }) => {
   useEffect(() => {
-    trackPageViews()
+    if (process.env.NODE_ENV === 'production') {
+      trackPageViews()
+    }
   }, [])
 
   return children
