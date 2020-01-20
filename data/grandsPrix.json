@@ -50,7 +50,7 @@
       "country": "Australia",
       "city": "Melbourne",
       "timezone": "australia/melbourne",
-      "status": "UNCONFIRMED",
+      "status": "CONFIRMED",
       "sessions": [
         {
           "type": "FP1",
@@ -83,7 +83,7 @@
       "country": "Bahrain",
       "city": "Sakhir",
       "timezone": "asia/bahrain",
-      "status": "UNCONFIRMED",
+      "status": "CONFIRMED",
       "sessions": [
         {
           "type": "FP1",
@@ -116,27 +116,27 @@
       "country": "Vietnam",
       "city": "Hanoi",
       "timezone": "asia/ho_chi_minh",
-      "status": "TBA",
+      "status": "CONFIRMED",
       "sessions": [
         {
           "type": "FP1",
-          "startDate": "2020-04-03 10:00:00",
-          "endDate": "2020-04-03 11:30:00"
+          "startDate": "2020-04-03 11:00:00",
+          "endDate": "2020-04-03 12:30:00"
         },
         {
           "type": "FP2",
-          "startDate": "2020-04-03 14:00:00",
-          "endDate": "2020-04-03 15:30:00"
+          "startDate": "2020-04-03 15:00:00",
+          "endDate": "2020-04-03 16:30:00"
         },
         {
           "type": "FP3",
-          "startDate": "2020-04-04 11:00:00",
-          "endDate": "2020-04-04 12:00:00"
+          "startDate": "2020-04-04 12:00:00",
+          "endDate": "2020-04-04 13:00:00"
         },
         {
           "type": "Q",
-          "startDate": "2020-04-04 14:00:00",
-          "endDate": "2020-04-04 15:00:00"
+          "startDate": "2020-04-04 15:00:00",
+          "endDate": "2020-04-04 16:00:00"
         },
         {
           "type": "R",
@@ -149,27 +149,27 @@
       "country": "China",
       "city": "Shanghai",
       "timezone": "asia/shanghai",
-      "status": "UNCONFIRMED",
+      "status": "CONFIRMED",
       "sessions": [
         {
           "type": "FP1",
-          "startDate": "2020-04-17 10:00:00",
-          "endDate": "2020-04-17 11:30:00"
+          "startDate": "2020-04-17 11:00:00",
+          "endDate": "2020-04-17 12:30:00"
         },
         {
           "type": "FP2",
-          "startDate": "2020-04-17 14:00:00",
-          "endDate": "2020-04-17 15:30:00"
+          "startDate": "2020-04-17 15:00:00",
+          "endDate": "2020-04-17 16:30:00"
         },
         {
           "type": "FP3",
-          "startDate": "2020-04-18 11:00:00",
-          "endDate": "2020-04-18 12:00:00"
+          "startDate": "2020-04-18 12:00:00",
+          "endDate": "2020-04-18 13:00:00"
         },
         {
           "type": "Q",
-          "startDate": "2020-04-18 14:00:00",
-          "endDate": "2020-04-18 15:00:00"
+          "startDate": "2020-04-18 15:00:00",
+          "endDate": "2020-04-18 16:00:00"
         },
         {
           "type": "R",
@@ -182,7 +182,7 @@
       "country": "Netherlands",
       "city": "Zandvoort",
       "timezone": "europe/amsterdam",
-      "status": "TBA",
+      "status": "CONFIRMED",
       "sessions": [
         {
           "type": "FP1",
@@ -207,7 +207,7 @@
         {
           "type": "R",
           "startDate": "2020-05-03 15:10:00",
-          "endDate": "2020-05-03 16:10:00"
+          "endDate": "2020-05-03 17:10:00"
         }
       ]
     },
@@ -215,7 +215,7 @@
       "country": "Spain",
       "city": "Catalunya",
       "timezone": "europe/madrid",
-      "status": "UNCONFIRMED",
+      "status": "CONFIRMED",
       "sessions": [
         {
           "type": "FP1",
@@ -248,7 +248,7 @@
       "country": "Monaco",
       "city": "Monte Carlo",
       "timezone": "europe/monaco",
-      "status": "UNCONFIRMED",
+      "status": "CONFIRMED",
       "sessions": [
         {
           "type": "FP1",
@@ -281,7 +281,7 @@
       "country": "Azerbaijan",
       "city": "Baku",
       "timezone": "asia/baku",
-      "status": "UNCONFIRMED",
+      "status": "CONFIRMED",
       "sessions": [
         {
           "type": "FP1",
@@ -314,17 +314,17 @@
       "country": "Canada",
       "city": "Montréal",
       "timezone": "america/montreal",
-      "status": "UNCONFIRMED",
+      "status": "CONFIRMED",
       "sessions": [
         {
           "type": "FP1",
-          "startDate": "2020-06-12 10:00:00",
-          "endDate": "2020-06-12 11:30:00"
+          "startDate": "2020-06-12 11:00:00",
+          "endDate": "2020-06-12 12:30:00"
         },
         {
           "type": "FP2",
-          "startDate": "2020-06-12 14:00:00",
-          "endDate": "2020-06-12 15:30:00"
+          "startDate": "2020-06-12 15:00:00",
+          "endDate": "2020-06-12 16:30:00"
         },
         {
           "type": "FP3",
@@ -347,7 +347,7 @@
       "country": "France",
       "city": "Le Castellet",
       "timezone": "europe/paris",
-      "status": "UNCONFIRMED",
+      "status": "CONFIRMED",
       "sessions": [
         {
           "type": "FP1",
@@ -380,7 +380,7 @@
       "country": "Austria",
       "city": "Spielberg",
       "timezone": "europe/vienna",
-      "status": "UNCONFIRMED",
+      "status": "CONFIRMED",
       "sessions": [
         {
           "type": "FP1",
@@ -413,32 +413,32 @@
       "country": "Great Britain",
       "city": "Silverstone",
       "timezone": "europe/london",
-      "status": "UNCONFIRMED",
+      "status": "CONFIRMED",
       "sessions": [
         {
           "type": "FP1",
-          "startDate": "2020-07-17 10:00:00",
-          "endDate": "2020-07-17 11:30:00"
+          "startDate": "2020-07-17 11:00:00",
+          "endDate": "2020-07-17 12:30:00"
         },
         {
           "type": "FP2",
-          "startDate": "2020-07-17 14:00:00",
-          "endDate": "2020-07-17 15:30:00"
+          "startDate": "2020-07-17 15:00:00",
+          "endDate": "2020-07-17 16:30:00"
         },
         {
           "type": "FP3",
-          "startDate": "2020-07-18 11:00:00",
-          "endDate": "2020-07-18 12:00:00"
+          "startDate": "2020-07-18 12:00:00",
+          "endDate": "2020-07-18 13:00:00"
         },
         {
           "type": "Q",
-          "startDate": "2020-07-18 14:00:00",
-          "endDate": "2020-07-18 15:00:00"
+          "startDate": "2020-07-18 15:00:00",
+          "endDate": "2020-07-18 16:00:00"
         },
         {
           "type": "R",
-          "startDate": "2020-07-19 14:10:00",
-          "endDate": "2020-07-19 16:10:00"
+          "startDate": "2020-07-19 15:10:00",
+          "endDate": "2020-07-19 17:10:00"
         }
       ]
     },
@@ -446,7 +446,7 @@
       "country": "Hungary",
       "city": "Budapest",
       "timezone": "europe/budapest",
-      "status": "UNCONFIRMED",
+      "status": "CONFIRMED",
       "sessions": [
         {
           "type": "FP1",
@@ -479,7 +479,7 @@
       "country": "Belgium",
       "city": "Spa-Francorchamps",
       "timezone": "europe/brussels",
-      "status": "UNCONFIRMED",
+      "status": "CONFIRMED",
       "sessions": [
         {
           "type": "FP1",
@@ -512,7 +512,7 @@
       "country": "Italy",
       "city": "Monza",
       "timezone": "europe/rome",
-      "status": "UNCONFIRMED",
+      "status": "CONFIRMED",
       "sessions": [
         {
           "type": "FP1",
@@ -545,7 +545,7 @@
       "country": "Singapore",
       "city": "Singapore",
       "timezone": "asia/singapore",
-      "status": "UNCONFIRMED",
+      "status": "CONFIRMED",
       "sessions": [
         {
           "type": "FP1",
@@ -578,7 +578,7 @@
       "country": "Russia",
       "city": "Sochi",
       "timezone": "europe/moscow",
-      "status": "UNCONFIRMED",
+      "status": "CONFIRMED",
       "sessions": [
         {
           "type": "FP1",
@@ -644,7 +644,7 @@
       "country": "United States",
       "city": "Austin",
       "timezone": "america/chicago",
-      "status": "UNCONFIRMED",
+      "status": "CONFIRMED",
       "sessions": [
         {
           "type": "FP1",
@@ -668,8 +668,8 @@
         },
         {
           "type": "R",
-          "startDate": "2020-10-25 13:10:00",
-          "endDate": "2020-10-25 15:10:00"
+          "startDate": "2020-10-25 14:10:00",
+          "endDate": "2020-10-25 16:10:00"
         }
       ]
     },
@@ -677,17 +677,17 @@
       "country": "Mexico",
       "city": "Mexico City",
       "timezone": "america/mexico_city",
-      "status": "UNCONFIRMED",
+      "status": "CONFIRMED",
       "sessions": [
         {
           "type": "FP1",
-          "startDate": "2020-10-30 10:00:00",
-          "endDate": "2020-10-30 11:30:00"
+          "startDate": "2020-10-30 11:00:00",
+          "endDate": "2020-10-30 12:30:00"
         },
         {
           "type": "FP2",
-          "startDate": "2020-10-30 14:00:00",
-          "endDate": "2020-10-30 15:30:00"
+          "startDate": "2020-10-30 15:00:00",
+          "endDate": "2020-10-30 16:30:00"
         },
         {
           "type": "FP3",
@@ -710,7 +710,7 @@
       "country": "Brazil",
       "city": "São Paulo",
       "timezone": "america/sao_paulo",
-      "status": "UNCONFIRMED",
+      "status": "CONFIRMED",
       "sessions": [
         {
           "type": "FP1",
@@ -743,7 +743,7 @@
       "country": "Abu Dhabi",
       "city": "Yas Island",
       "timezone": "asia/dubai",
-      "status": "UNCONFIRMED",
+      "status": "CONFIRMED",
       "sessions": [
         {
           "type": "FP1",
