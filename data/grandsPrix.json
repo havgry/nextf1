@@ -4,7 +4,7 @@
       "country": "Pre-season test 1",
       "city": "Catalunya",
       "timezone": "europe/madrid",
-      "status": "UNCONFIRMED",
+      "status": "CONFIRMED",
       "sessions": [
         {
           "type": "T",
@@ -27,7 +27,7 @@
       "country": "Pre-season test 2",
       "city": "Catalunya",
       "timezone": "europe/madrid",
-      "status": "UNCONFIRMED",
+      "status": "CONFIRMED",
       "sessions": [
         {
           "type": "T",
