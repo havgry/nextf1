@@ -4,6 +4,7 @@ import Head from 'next/head'
 import TrackingWrapper from '../components/trackingWrapper'
 import GrandsPrix from '../components/grandsPrix'
 import Header from '../components/header'
+import { getTimeZoneName } from '../utils'
 
 const Home = () => (
   <Fragment>
@@ -19,6 +20,9 @@ const Home = () => (
       <Header />
       <main>
         <GrandsPrix />
+        <section className="timezone-notice">
+          {`Using ${getTimeZoneName()} timezone`}
+        </section>
       </main>
     </TrackingWrapper>
 
@@ -34,6 +38,12 @@ const Home = () => (
         padding: 1rem;
         max-width: 40rem;
         margin: 0 auto;
+      }
+
+      .timezone-notice {
+        text-align: center;
+        margin: 2rem 0;
+        font-size: 0.9rem;
       }
     `}</style>
       <style>{`

@@ -5,8 +5,21 @@ const capitalize = (string) => {
   return string.charAt(0).toUpperCase() + string.slice(1)
 }
 
+export const getTimeZoneName = (() => {
+  let cachedVal
+  const getAndSetTimeZoneName = () => {
+    if (cachedVal) {
+      return cachedVal
+    }
+
+    cachedVal = spacetime().timezone().name
+    return cachedVal
+  }
+  return getAndSetTimeZoneName
+})()
+
 const getSpacetimeInTimeZone = (dateTime, initialTimezone) => {
-  const currentTimeZone = spacetime().timezone().name
+  const currentTimeZone = getTimeZoneName()
   return spacetime(dateTime, initialTimezone).goto(currentTimeZone)
 }
 
