@@ -93,6 +93,20 @@ const Event = ({
           }
         </Collapse>
       </main>
+      {status === STATUS.CANCELLED &&
+        <footer>
+          <Warning
+            text="Grand Prix cancelled due to COVID-19"
+          />
+        </footer>
+      }
+      {status === STATUS.POSTPONED &&
+        <footer>
+          <Warning
+            text="Grand Prix postponed due to COVID-19"
+          />
+        </footer>
+      }
       <style jsx>{`
         h1 {
           margin: 0;

@@ -50,7 +50,7 @@
       "country": "Australia",
       "city": "Melbourne",
       "timezone": "australia/melbourne",
-      "status": "CONFIRMED",
+      "status": "CANCELLED",
       "sessions": [
         {
           "type": "FP1",
@@ -149,7 +149,7 @@
       "country": "China",
       "city": "Shanghai",
       "timezone": "asia/shanghai",
-      "status": "CONFIRMED",
+      "status": "POSTPONED",
       "sessions": [
         {
           "type": "FP1",

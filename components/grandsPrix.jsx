@@ -5,9 +5,14 @@ import grandsPrixData from '../data/grandsPrix.json'
 
 const GrandsPrix = () => {
   return (
-    <List
-      items={grandsPrixData.events}
-    />
+    <>
+      <b>
+        Expect further cancellations the next coming months due to COVID-19 🤢
+      </b>
+      <List
+        items={grandsPrixData.events}
+      />
+    </>
   )
 }
 
