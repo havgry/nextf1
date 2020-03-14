@@ -83,7 +83,7 @@
       "country": "Bahrain",
       "city": "Sakhir",
       "timezone": "asia/bahrain",
-      "status": "CONFIRMED",
+      "status": "POSTPONED",
       "sessions": [
         {
           "type": "FP1",
@@ -116,7 +116,7 @@
       "country": "Vietnam",
       "city": "Hanoi",
       "timezone": "asia/ho_chi_minh",
-      "status": "CONFIRMED",
+      "status": "POSTPONED",
       "sessions": [
         {
           "type": "FP1",
