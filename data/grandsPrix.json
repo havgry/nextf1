@@ -182,7 +182,7 @@
       "country": "Netherlands",
       "city": "Zandvoort",
       "timezone": "europe/amsterdam",
-      "status": "CONFIRMED",
+      "status": "POSTPONED",
       "sessions": [
         {
           "type": "FP1",
@@ -215,7 +215,7 @@
       "country": "Spain",
       "city": "Catalunya",
       "timezone": "europe/madrid",
-      "status": "CONFIRMED",
+      "status": "POSTPONED",
       "sessions": [
         {
           "type": "FP1",
@@ -248,7 +248,7 @@
       "country": "Monaco",
       "city": "Monte Carlo",
       "timezone": "europe/monaco",
-      "status": "CONFIRMED",
+      "status": "CANCELLED",
       "sessions": [
         {
           "type": "FP1",
