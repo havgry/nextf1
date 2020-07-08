@@ -38,6 +38,12 @@ const GrandsPrix = () => (
       </>
     )}
     <style jsx>{`
+      b {
+        text-align: center;
+        display: block;
+        font-style: italic;
+      }
+
       h3 {
         text-align: center;
       }
