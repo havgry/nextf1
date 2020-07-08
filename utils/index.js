@@ -52,7 +52,7 @@ export const groupByDayName = (sessions, timezone) => {
 export const timeFromNow = (dateTime, initialTimezone) => {
   const now = spacetime(new Date())
   const future = getSpacetimeInTimeZone(dateTime, initialTimezone)
-  return now.since(future).precise
+  return now.since(future)
 }
 
 export const getStartEndDates = (dateTimeStart, dateTimeEnd, initialTimezone) => {

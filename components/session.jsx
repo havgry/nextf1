@@ -13,7 +13,10 @@ const Session = ({
   const endTimeFormatted = formatTime(endDate, timezone)
 
   return (
-    <li key={type} title={`Starts ${timeFromNow(startDate, timezone)}`}>
+    <li
+      key={type}
+      title={`${timeFromNow(startDate, timezone).precise}`}
+    >
       <span className="session__title">
         {SESSIONS[type]}
       </span>
