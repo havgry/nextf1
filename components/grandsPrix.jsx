@@ -26,6 +26,7 @@ const GrandsPrix = () => (
     </b>
     <List
       items={futureEvents}
+      expandFirstItem
     />
     {pastEvents.length > 0 && (
       <>
