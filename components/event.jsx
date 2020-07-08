@@ -96,14 +96,14 @@ const Event = ({
       {status === STATUS.CANCELLED &&
         <footer>
           <Warning
-            text="Grand Prix cancelled due to COVID-19"
+            text="Grand Prix cancelled"
           />
         </footer>
       }
       {status === STATUS.POSTPONED &&
         <footer>
           <Warning
-            text="Grand Prix postponed due to COVID-19"
+            text="Grand Prix postponed"
           />
         </footer>
       }
