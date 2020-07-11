@@ -19,10 +19,10 @@ const Home = () => (
     <TrackingWrapper>
       <Header />
       <main>
-        <GrandsPrix />
         <b>
           It's lights out and away we go!
         </b>
+        <GrandsPrix />
         <section className="timezone-notice">
           {`Using ${getTimeZoneName()} timezone`}
         </section>
