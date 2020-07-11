@@ -45,13 +45,12 @@ const Home = () => (
         margin: 2rem 0;
         font-size: 0.9rem;
       }
-    `}</style>
-      <style>{`
-        ol {
-          list-style: none;
-          padding: 0;
-          margin: 0;
-        }
+
+      :global(ol) {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
     `}</style>
   </Fragment>
 )
