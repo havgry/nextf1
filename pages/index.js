@@ -20,6 +20,9 @@ const Home = () => (
       <Header />
       <main>
         <GrandsPrix />
+        <b>
+          It's lights out and away we go!
+        </b>
         <section className="timezone-notice">
           {`Using ${getTimeZoneName()} timezone`}
         </section>
@@ -44,6 +47,12 @@ const Home = () => (
         text-align: center;
         margin: 2rem 0;
         font-size: 0.9rem;
+      }
+
+      b {
+        text-align: center;
+        display: block;
+        font-style: italic;
       }
 
       :global(ol) {

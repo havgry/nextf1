@@ -21,9 +21,6 @@ if (nextEventIndex > -1) {
 
 const GrandsPrix = () => (
   <>
-    <b>
-      It's lights out and away we go!
-    </b>
     <List
       items={futureEvents}
       expandFirstItem
@@ -39,12 +36,6 @@ const GrandsPrix = () => (
       </>
     )}
     <style jsx>{`
-      b {
-        text-align: center;
-        display: block;
-        font-style: italic;
-      }
-
       h3 {
         text-align: center;
       }
