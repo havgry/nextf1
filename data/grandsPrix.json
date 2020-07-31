@@ -314,7 +314,7 @@
       "country": "Italy",
       "city": "Scarperia e San Piero",
       "timezone": "europe/rome",
-      "status": "TBA",
+      "status": "CONFIRMED",
       "sessions": [
         {
           "type": "FP1",
@@ -347,7 +347,7 @@
       "country": "Russia",
       "city": "Sochi",
       "timezone": "europe/moscow",
-      "status": "TBA",
+      "status": "CONFIRMED",
       "sessions": [
         {
           "type": "FP1",
@@ -373,6 +373,72 @@
           "type": "R",
           "startDate": "2020-09-27 14:10:00",
           "endDate": "2020-09-27 16:10:00"
+        }
+      ]
+    },
+    {
+      "country": "Germany",
+      "city": "Nürburg",
+      "timezone": "europe/berlin",
+      "status": "UNCONFIRMED",
+      "sessions": [
+        {
+          "type": "FP1",
+          "startDate": "2020-10-09 11:00:00",
+          "endDate": "2020-10-09 12:30:00"
+        },
+        {
+          "type": "FP2",
+          "startDate": "2020-10-09 15:00:00",
+          "endDate": "2020-10-09 16:30:00"
+        },
+        {
+          "type": "FP3",
+          "startDate": "2020-10-10 12:00:00",
+          "endDate": "2020-10-10 13:00:00"
+        },
+        {
+          "type": "Q",
+          "startDate": "2020-10-10 15:00:00",
+          "endDate": "2020-10-10 16:00:00"
+        },
+        {
+          "type": "R",
+          "startDate": "2020-10-11 15:10:00",
+          "endDate": "2020-10-11 17:10:00"
+        }
+      ]
+    },
+    {
+      "country": "Portugal",
+      "city": "Portimão",
+      "timezone": "europe/lisbon",
+      "status": "UNCONFIRMED",
+      "sessions": [
+        {
+          "type": "FP1",
+          "startDate": "2020-10-23 11:00:00",
+          "endDate": "2020-10-23 12:30:00"
+        },
+        {
+          "type": "FP2",
+          "startDate": "2020-10-23 15:00:00",
+          "endDate": "2020-10-23 16:30:00"
+        },
+        {
+          "type": "FP3",
+          "startDate": "2020-10-24 12:00:00",
+          "endDate": "2020-10-24 13:00:00"
+        },
+        {
+          "type": "Q",
+          "startDate": "2020-10-24 15:00:00",
+          "endDate": "2020-10-24 16:00:00"
+        },
+        {
+          "type": "R",
+          "startDate": "2020-10-25 15:10:00",
+          "endDate": "2020-10-25 17:10:00"
         }
       ]
     }
