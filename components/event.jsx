@@ -79,15 +79,15 @@ const Event = ({
           {status === STATUS.UNCONFIRMED &&
             <footer>
               <Warning
-                text="Session times yet to be confirmed for 2020"
-                title="Preliminary session times are based on 2019 schedule"
+                text="Session times are yet to be confirmed"
+                title="Preliminary session times are based on previous years"
               />
             </footer>
           }
           {status === STATUS.TBA &&
             <footer>
               <Warning
-                text="New Grand Prix! Session times yet to be announced"
+                text="New Grand Prix! Session times are yet to be announced"
               />
             </footer>
           }
